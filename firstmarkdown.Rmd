@@ -1,0 +1,44 @@
+---
+title: "My first creation"
+author: "Vivek H. Patil"
+date: "2/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+This is going to be awesome. I can't wait to send a link to this page to my friends on twitter.
+
+# How many rows and columns?
+
+This is my first line of *R* code
+
+```{r}
+# This is a comment.
+
+# Number of rows
+
+nrow(mtcars)
+
+# number of columns
+ncol(mtcars)
+
+```
+
+This dataset has `r nrow(mtcars)` rows and `r ncol(mtcars)` columns.
+
+# Summary of the dataset
+
+```{r}
+summary(mtcars)
+```
+
+# My first r plot
+
+```{r}
+plot(mtcars$mpg,mtcars$hp,xlab="Miles per gallon",ylab="Horse Power")
+```
+
